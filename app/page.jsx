@@ -6,6 +6,12 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+function gotoLink(link) {
+  console.log(link.value);
+  location.href = link.value;
+};
+
+
 
 const Home = () => {
   return (
@@ -23,8 +29,8 @@ const Home = () => {
           </p>
           {/** btn and socials */}
           <div className="flex flex-col xl:flex-row items-center gap-8">
-            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-              <span>Download CV</span>
+            <Button variant="outline" size="lg" className="uppercase flex items-center gap-2" onClick="gotoLink(this)" value="https://pdf.ac/3XFnhZ">
+              <a href="https://pdf.ac/3XFnhZ"><span>Download CV</span></a>
               <FiDownload className="text-xl" />
             </Button>
             <div className="mb-8 xl:mb-0">
