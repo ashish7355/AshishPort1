@@ -30,7 +30,7 @@ const Home = () => {
           {/** btn and socials */}
           <div className="flex flex-col xl:flex-row items-center gap-8">
             <Button variant="outline" size="lg" className="uppercase flex items-center gap-2" onClick="gotoLink(this)" value="https://pdf.ac/3XFnhZ">
-              <a href="https://pdf.ac/3XFnhZ"><span>Download CV</span></a>
+              <a href="https://pdf.ac/3JYOGw"><span>Download CV</span></a>
               <FiDownload className="text-xl" />
             </Button>
             <div className="mb-8 xl:mb-0">
